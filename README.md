@@ -9,7 +9,7 @@ Created by: Michael Kirker
 
 Website: [http://michaelkirker.net](http://michaelkirker.net "http://michaelkirker.net")
 
-Git repository: [https://github.com/mkirker/Unofficial-UChicago-Beamer-Theme]("https://github.com/mkirker/Unofficial-UChicago-Beamer-Theme")
+Git repository: [https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme]("https://github.com/mkirker/Unofficial-UChicago-Beamer-Theme")
 
 
 ## Repository structure ##
