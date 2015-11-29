@@ -14,6 +14,8 @@ Website: [http://michaelkirker.net](http://michaelkirker.net "http://michaelkirk
 
 Git repository: [https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme]("https://github.com/mkirker/Unofficial-UChicago-Beamer-Theme")
 
+This theme is an ongoing side-project, and there are (probably) many Beamer commands that either don't quite look nice or simply don't work well with this theme. Please feel free to report any bugs or improvements you would like to see. Otherwise updates to the theme will generally occur each time I put together a new presentation and encounter some new element in the presentation would could look better.
+
 
 ## Repository structure ##
 
