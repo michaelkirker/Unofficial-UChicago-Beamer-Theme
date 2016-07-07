@@ -3,12 +3,16 @@ Files to theme your LaTeX Beamer presentation to match the University of Chicago
 
 Note that this theme is unofficial. It is in no way endorsed by the University of Chicago.
 
-A preview of how these theme looks can be seen in the [compiled example presentation (.pdf)]("https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme/blob/master/Unofficial_UChicago_Theme_Example.pdf").
+The screenshots below give an idea of what the main elements of the presentation look like. For more information on how the entire theme looks, see the [compiled example presentation (.pdf)]("https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme/blob/master/Unofficial_UChicago_Theme_Example.pdf") within the repository.
 
+![Screenshot 1](screenshots/screenshot1.png "Title slide") ![Screenshot 2](screenshots/screenshot2.png "Itemized list slide")
+![Screenshot 3](screenshots/screenshot3.png "Block slide") ![Screenshot 4](screenshots/screenshot4.png "End slide")
 
 ## Contact details ##
 
 Created by: Michael Kirker
+
+Email: <mkirker@uchicago.edu>
 
 Website: [http://michaelkirker.net](http://michaelkirker.net "http://michaelkirker.net")
 
@@ -21,6 +25,8 @@ This theme is an ongoing side-project, and there are (probably) many Beamer comm
 
 * /graphics/
 	* Folder containing the graphical images used in the slides.
+* /screenshots/
+	* Folder containing the screenshots shown above.
 * beamerthemeUnofficialUChicago.sty
 	* Beamer theme style file.
 * Unofficial\_UChicago\_Theme\_Example.tex
@@ -33,7 +39,7 @@ This theme is an ongoing side-project, and there are (probably) many Beamer comm
 
 Add the folder */graphics/* and the file *beamerthemeUnofficialUChicago.sty* to the folder containing the .tex file for your beamer presentation.
 
-Alternatively, add the folder and .sty file to the TeX search path so that all your beamer presentations can call the files from one location. 
+Alternatively, add the graphics folder and .sty file to the TeX search path so that all your beamer presentations can call the files from one location. 
 
 
 The following code illustrates how to call the theme inside your .tex file.
@@ -58,7 +64,7 @@ Note that this theme is unofficial and not endorced by the University of Chicago
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Michael Kirker
+Copyright (c) 2016 Michael Kirker
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
