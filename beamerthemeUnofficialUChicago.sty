@@ -6,7 +6,7 @@
 %
 %	The latest version of this theme is hosted at the Github repository https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme
 %
-%	I have created this theme by cobbling together many snippets of code that I have picked up over the years from various sources online, and by simple 
+%	I have created this theme by cobbling together many snippets of code that I have picked up over the years from various sources online, and by simple
 %	tinkering. Therefore I am unable to fully credit all original sources.
 %
 % 	Some of the main sources:
@@ -22,7 +22,7 @@
 % 		Packages that will be used
 %============================================================================================%
 \usepackage{xcolor}				% Create custom colours
-\usepackage[overlay]{textpos} 			% Position logo in each slide header 
+\usepackage[overlay]{textpos} 			% Position logo in each slide header
 \usepackage{tikz}
 \usepackage[export]{adjustbox}
 \usepackage{lmodern}
@@ -76,14 +76,14 @@
 	\definecolor{ChicagoBlue}{RGB}{21,95,131}
 	\definecolor{ChicagoBlueLight}{RGB}{91,150,173}
 	\definecolor{ChicagoBlueDark}{RGB}{21,67,95}
-	\definecolor{ChicagoViolet}{RGB}{53,14,32}    
+	\definecolor{ChicagoViolet}{RGB}{53,14,32}
 		
 % Colors for the Shading
 	\definecolor{RedShade1}{RGB}{138,0,0} % Colors taken from UChicago Powerpoint slides
 	\definecolor{RedShade2}{RGB}{68,0,0}
 		
 
-\setbeamercolor*{frametitle}{fg=white} 
+\setbeamercolor*{frametitle}{fg=white}
 
 \setbeamercolor*{title}{use=structure,fg=white,bg=ChicagoMaroon}
 
@@ -105,10 +105,10 @@
 	\setbeamercolor{block title example}{bg=ChicagoDarkGreen,fg=white}
 	\setbeamercolor{block body example}{bg=ChicagoLightGreen,fg=white}
 
-	\setbeamercolor{author in head/foot}{bg=ChicagoMaroon,fg=white} 
+	\setbeamercolor{author in head/foot}{bg=ChicagoMaroon,fg=white}
  	\setbeamercolor{title in head/foot}{bg=ChicagoDarkGray,fg=white}
- 	\setbeamercolor{date in head/foot}{bg=ChicagoMaroon,fg=white} 
- 	\setbeamercolor{date in head/foot}{bg=ChicagoLightGray,fg=ChicagoMaroon} 
+ 	\setbeamercolor{date in head/foot}{bg=ChicagoMaroon,fg=white}
+ 	\setbeamercolor{date in head/foot}{bg=ChicagoLightGray,fg=ChicagoMaroon}
  		
  \setbeamertemplate{headline}{
  \begin{beamercolorbox}{section in head/foot} \vskip2pt\insertnavigation{\paperwidth}\vskip2pt
@@ -159,7 +159,7 @@
 
 % Create Shading:
 
-\colorlet{titleleft}{RedShade1} 
+\colorlet{titleleft}{RedShade1}
 \colorlet{titleright}{RedShade2}
 
 \makeatletter
@@ -214,8 +214,8 @@
 
 
 \addtobeamertemplate{frametitle}{}{%
-	\begin{textblock*}{0.75cm}[1,1](1.04\textwidth,0mm)
-	\includegraphics[height=0.7cm,width=0.7cm,keepaspectratio]{graphics/shield_rgb_reversed_transparent.png}
+	\begin{textblock*}{1.2em}[1,1](0.97\paperwidth,0mm)
+	\includegraphics[height=1.1em,width=1.1em,keepaspectratio]{graphics/shield_title.png}
 	\end{textblock*}
 }
 
@@ -241,11 +241,11 @@
 
 % Create "shield" shape (Cant remember where I found this code)
 
-\newcommand\shield{ \tikz [baseline] \path [fill=ChicagoMaroon] (0,1.3ex) -- (0,0.56ex) arc [radius=0.5ex, start angle=-180, end angle=0] -- (1ex,1.3ex) -- cycle ;  } 
+\newcommand\shield{ \tikz [baseline] \path [fill=ChicagoMaroon] (0,1.3ex) -- (0,0.56ex) arc [radius=0.5ex, start angle=-180, end angle=0] -- (1ex,1.3ex) -- cycle ;  }
 
-\defbeamertemplate{itemize item}{image}{\shield} 
-\defbeamertemplate{itemize subitem}{image}{\shield} 
-\defbeamertemplate{itemize subsubitem}{image}{\shield} 
+\defbeamertemplate{itemize item}{image}{\shield}
+\defbeamertemplate{itemize subitem}{image}{\shield}
+\defbeamertemplate{itemize subsubitem}{image}{\shield}
 
 \setbeamertemplate{itemize item}[image]
 \setbeamertemplate{itemize subitem}[image]
@@ -261,11 +261,11 @@
 % Space out itemized items a bit more
 %---------------------
 
-\newlength{\wideitemsep} 
-\setlength{\wideitemsep}{\itemsep} 
-\addtolength{\wideitemsep}{0.25em} 
-\let\olditem\item 
-\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}  
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{\itemsep}
+\addtolength{\wideitemsep}{0.25em}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
 
 
 
@@ -291,7 +291,7 @@
   \bigskip
   \usebeamerfont{date}\insertdate\par
   \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic
-  
+
 }
 
 
@@ -299,11 +299,11 @@
 
 \newcommand\BackgroundShaded{%
 \setbeamertemplate{background}{%
-\begin{tikzpicture}
-    \shade [left color=RedShade1,right color=RedShade2] 
-      (0,0) rectangle (\paperwidth,\paperheight); 
-      \node (russell) at (10,3.5)
-    {\includegraphics[height=.9\paperheight]{graphics/shield_rgb_reversed_transparent}};
+\begin{tikzpicture}[every node/.style={inner sep=0,outer sep=0}]
+    \shade [left color=RedShade1,right color=RedShade2]
+      (0,0) rectangle (\paperwidth,\paperheight);
+      \node [above left] (russell) at (\paperwidth,0) %(10,3.5)
+    {\includegraphics[height=.8\paperheight]{graphics/shield_background}};
   \end{tikzpicture}
 }}
 

@@ -39,7 +39,7 @@ This theme is an ongoing side-project, and there are (probably) many Beamer comm
 
 Add the folder */graphics/* and the file *beamerthemeUnofficialUChicago.sty* to the folder containing the .tex file for your beamer presentation.
 
-Alternatively, add the graphics folder and .sty file to the TeX search path so that all your beamer presentations can call the files from one location. 
+Alternatively, add the graphics folder and .sty file to the TeX search path so that all your Beamer presentations can call the files from one location. 
 
 
 The following code illustrates how to call the theme inside your .tex file.
@@ -57,10 +57,12 @@ The following code illustrates how to call the theme inside your .tex file.
 	\end{document}
 
 
+This Beamer theme also works in the wide screen (16:9) aspect ratio. To create wide screen slides (rather than the default 4:3 ratio), add `,aspectratio=169` into the options for \documentclass (the first line in the example above).
+
 
 ## License
 
-Note that this theme is unofficial and not endorced by the University of Chicago. The LaTeX code has been developed independently and is avaliable for your use.
+Note that this theme is unofficial and not endorsed by the University of Chicago. The LaTeX code has been developed independently and is available for your use.
 
 The MIT License (MIT)
 
