@@ -5,8 +5,8 @@ Note that this theme is unofficial. It is in no way endorsed by the University o
 
 The screenshots below give an idea of what the main elements of the presentation look like. For more information on how the entire theme looks, see the [compiled example presentation (.pdf)]("https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme/blob/master/Unofficial_UChicago_Theme_Example.pdf") within the repository.
 
-![Screenshot 1](screenshots/screenshot1.png "Title slide") ![Screenshot 2](screenshots/screenshot2.png "Itemized list slide")
-![Screenshot 3](screenshots/screenshot3.png "Block slide") ![Screenshot 4](screenshots/screenshot4.png "End slide")
+![Screenshot 1](http://i.imgur.com/tyfjsUy.png "Title slide") ![Screenshot 2](http://i.imgur.com/7dsPxEO.png "Itemized list slide")
+![Screenshot 3](http://i.imgur.com/vdQM0zh.png "Block slide") ![Screenshot 4](http://i.imgur.com/2wrP9zG.png "End slide")
 
 ## Contact details ##
 
@@ -25,8 +25,6 @@ This theme is an ongoing side-project, and there are (probably) many Beamer comm
 
 * /graphics/
 	* Folder containing the graphical images used in the slides.
-* /screenshots/
-	* Folder containing the screenshots shown above.
 * beamerthemeUnofficialUChicago.sty
 	* Beamer theme style file.
 * Unofficial\_UChicago\_Theme\_Example.tex
