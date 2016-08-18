@@ -35,6 +35,9 @@ This theme is an ongoing side-project, and there are (probably) many Beamer comm
 
 ## How to use the theme ##
 
+If you do not use Git, you can download the the necessary files as a zip file by clicking [here](https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme/archive/master.zip "here").
+
+
 Add the folder */graphics/* and the file *beamerthemeUnofficialUChicago.sty* to the folder containing the .tex file for your beamer presentation.
 
 Alternatively, add the graphics folder and .sty file to the TeX search path so that all your Beamer presentations can call the files from one location. 
