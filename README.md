@@ -12,7 +12,7 @@ The screenshots below give an idea of what the main elements of the presentation
 
 Created by: Michael Kirker
 
-Email: <mkirker@uchicago.edu>
+Email: <michael@michaelkirker.net>
 
 Website: [http://michaelkirker.net](http://michaelkirker.net "http://michaelkirker.net")
 
@@ -46,16 +46,16 @@ Alternatively, add the graphics folder and .sty file to the TeX search path so t
 The following code illustrates how to call the theme inside your .tex file.
 
     \documentclass[12pt]{beamer}
-	
-	\usetheme{UnofficialUChicago}
-
-	\begin{document}
-
-	\maketitle % It is important to use the command "\maketitle" to generate your title slide. "\titlepage" does not automatically generate the background image.
-
-	% The rest of your Beamer presentation goes here
-
-	\end{document}
+    
+    \usetheme{UnofficialUChicago}
+    
+    \begin{document}
+    
+    \maketitle % It is important to use the command "\maketitle" to generate your title slide. "\titlepage" does not automatically generate the background image.
+    
+    % The rest of your Beamer presentation goes here
+    
+    \end{document}
 
 
 This Beamer theme also works in the wide screen (16:9) aspect ratio. To create wide screen slides (rather than the default 4:3 ratio), add `,aspectratio=169` into the options for \documentclass (the first line in the example above).
@@ -69,20 +69,8 @@ The MIT License (MIT)
 
 Copyright (c) 2016 Michael Kirker
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -4,10 +4,12 @@
 %
 % 	Created by: Michael Kirker (http://michaelkirker.net)
 %
-%	The latest version of this theme is hosted at the Github repository https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme
+%	The latest version of this theme is hosted at the Github repository
+%       https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme
 %
-%	I have created this theme by cobbling together many snippets of code that I have picked up over the years from various sources online, and by simple
-%	tinkering. Therefore I am unable to fully credit all original sources.
+%	I have created this theme by cobbling together many snippets of code that I have picked
+%   up over the years from various sources online, and by simple tinkering. Therefore I am
+%   unable to fully credit all original sources.
 %
 % 	Some of the main sources:
 % 		https://tex.stackexchange.com/
@@ -214,9 +216,14 @@
 
 
 \addtobeamertemplate{frametitle}{}{%
-	\begin{textblock*}{1.2em}[1,1](0.97\paperwidth,0mm)
-	\includegraphics[height=1.1em,width=1.1em,keepaspectratio]{graphics/shield_title.png}
-	\end{textblock*}
+%	\begin{textblock*}{1.2em}[1,1](0.95\paperwidth,0mm)
+%	\includegraphics[height=1.1em,width=1.1em,keepaspectratio]{graphics/shield_title.png}
+%	\end{textblock*}
+       \begin{tikzpicture}[remember picture, overlay]
+       %\draw[blue, fill, shift={(-2em,1.1em)}] (\paperwidth,0mm) circle [radius=.1em];
+\node[above left, shift={(-1em,0.6em)}]() at (\paperwidth,0mm){%
+\includegraphics[height=1.1em,width=1.1em,keepaspectratio]{graphics/shield_title.png} };
+\end{tikzpicture}
 }
 
 
@@ -369,7 +376,13 @@
 \AtEndDocument{\pageatend}
 \makeatother
 
-
+% Remove those silly little nagivation bullets for each slide/section from the navigation bar
+\setbeamertemplate{headline}
+ {%
+  \begin{beamercolorbox}{section in head/foot}
+  \insertsectionnavigationhorizontal{\textwidth}{}{}
+  \end{beamercolorbox}%
+}
 
 
 %============================================================================================%
